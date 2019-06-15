@@ -5,11 +5,14 @@ import Pkg
 Pkg.add("DataFrames")
 ```
 
-    [32m[1m Resolving[22m[39m package versions...
+    [32m[1m  Updating[22m[39m registry at `~/.julia/registries/General`
+    [32m[1m  Updating[22m[39m git-repo `https://github.com/JuliaRegistries/General.git`
+    [2K[?25h[1mFetching:[22m[39m [========================================>]  100.0 %.0 %[32m[1m Resolving[22m[39m package versions...
+    [32m[1m Installed[22m[39m Parsers ─ v0.3.6
     [32m[1m  Updating[22m[39m `~/.julia/environments/v1.1/Project.toml`
     [90m [no changes][39m
     [32m[1m  Updating[22m[39m `~/.julia/environments/v1.1/Manifest.toml`
-    [90m [no changes][39m
+     [90m [69de0a69][39m[93m ↑ Parsers v0.3.5 ⇒ v0.3.6[39m
 
 
 
@@ -25,6 +28,10 @@ using CSV
     [90m [no changes][39m
     [32m[1m  Updating[22m[39m `~/.julia/environments/v1.1/Manifest.toml`
     [90m [no changes][39m
+
+
+    ┌ Info: Recompiling stale cache file /home/jcobb/.julia/compiled/v1.1/CSV/HHBkp.ji for CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b]
+    └ @ Base loading.jl:1184
 
 
 Ładujemy pliki pierwszego zadania - przetwarzanie sumy sygnałów
@@ -82,7 +89,7 @@ rs2 = CSV.read("res/result_signal_2")
 
 
 
-<table class="data-frame"><thead><tr><th></th><th> col1</th><th> col2</th></tr><tr><th></th><th>Float64</th><th>Float64</th></tr></thead><tbody><p>1,024 rows × 2 columns</p><tr><th>1</th><td>0.0</td><td>0.99806</td></tr><tr><th>2</th><td>0.000977517</td><td>0.99803</td></tr><tr><th>3</th><td>0.00195503</td><td>0.997962</td></tr><tr><th>4</th><td>0.00293255</td><td>0.997857</td></tr><tr><th>5</th><td>0.00391007</td><td>0.997714</td></tr><tr><th>6</th><td>0.00488759</td><td>0.997534</td></tr><tr><th>7</th><td>0.0058651</td><td>0.997316</td></tr><tr><th>8</th><td>0.00684262</td><td>0.997061</td></tr><tr><th>9</th><td>0.00782014</td><td>0.996768</td></tr><tr><th>10</th><td>0.00879765</td><td>0.996438</td></tr><tr><th>11</th><td>0.00977517</td><td>0.99607</td></tr><tr><th>12</th><td>0.0107527</td><td>0.995664</td></tr><tr><th>13</th><td>0.0117302</td><td>0.995221</td></tr><tr><th>14</th><td>0.0127077</td><td>0.994741</td></tr><tr><th>15</th><td>0.0136852</td><td>0.994223</td></tr><tr><th>16</th><td>0.0146628</td><td>0.993668</td></tr><tr><th>17</th><td>0.0156403</td><td>0.993075</td></tr><tr><th>18</th><td>0.0166178</td><td>0.992445</td></tr><tr><th>19</th><td>0.0175953</td><td>0.991777</td></tr><tr><th>20</th><td>0.0185728</td><td>0.991073</td></tr><tr><th>21</th><td>0.0195503</td><td>0.990331</td></tr><tr><th>22</th><td>0.0205279</td><td>0.989551</td></tr><tr><th>23</th><td>0.0215054</td><td>0.988734</td></tr><tr><th>24</th><td>0.0224829</td><td>0.987881</td></tr><tr><th>25</th><td>0.0234604</td><td>0.98699</td></tr><tr><th>26</th><td>0.0244379</td><td>0.986061</td></tr><tr><th>27</th><td>0.0254154</td><td>0.985096</td></tr><tr><th>28</th><td>0.026393</td><td>0.984094</td></tr><tr><th>29</th><td>0.0273705</td><td>0.983054</td></tr><tr><th>30</th><td>0.028348</td><td>0.981978</td></tr><tr><th>&vellip;</th><td>&vellip;</td><td>&vellip;</td></tr></tbody></table>
+<table class="data-frame"><thead><tr><th></th><th> col1</th><th> col2</th></tr><tr><th></th><th>Float64</th><th>Float64</th></tr></thead><tbody><p>1,024 rows × 2 columns</p><tr><th>1</th><td>0.0</td><td>0.99679</td></tr><tr><th>2</th><td>0.000977517</td><td>0.99674</td></tr><tr><th>3</th><td>0.00195503</td><td>0.996651</td></tr><tr><th>4</th><td>0.00293255</td><td>0.996526</td></tr><tr><th>5</th><td>0.00391007</td><td>0.996362</td></tr><tr><th>6</th><td>0.00488759</td><td>0.996161</td></tr><tr><th>7</th><td>0.0058651</td><td>0.995923</td></tr><tr><th>8</th><td>0.00684262</td><td>0.995647</td></tr><tr><th>9</th><td>0.00782014</td><td>0.995334</td></tr><tr><th>10</th><td>0.00879765</td><td>0.994983</td></tr><tr><th>11</th><td>0.00977517</td><td>0.994595</td></tr><tr><th>12</th><td>0.0107527</td><td>0.994169</td></tr><tr><th>13</th><td>0.0117302</td><td>0.993706</td></tr><tr><th>14</th><td>0.0127077</td><td>0.993206</td></tr><tr><th>15</th><td>0.0136852</td><td>0.992668</td></tr><tr><th>16</th><td>0.0146628</td><td>0.992092</td></tr><tr><th>17</th><td>0.0156403</td><td>0.99148</td></tr><tr><th>18</th><td>0.0166178</td><td>0.99083</td></tr><tr><th>19</th><td>0.0175953</td><td>0.990143</td></tr><tr><th>20</th><td>0.0185728</td><td>0.989418</td></tr><tr><th>21</th><td>0.0195503</td><td>0.988656</td></tr><tr><th>22</th><td>0.0205279</td><td>0.987857</td></tr><tr><th>23</th><td>0.0215054</td><td>0.987021</td></tr><tr><th>24</th><td>0.0224829</td><td>0.986148</td></tr><tr><th>25</th><td>0.0234604</td><td>0.985237</td></tr><tr><th>26</th><td>0.0244379</td><td>0.984289</td></tr><tr><th>27</th><td>0.0254154</td><td>0.983305</td></tr><tr><th>28</th><td>0.026393</td><td>0.982283</td></tr><tr><th>29</th><td>0.0273705</td><td>0.981224</td></tr><tr><th>30</th><td>0.028348</td><td>0.980129</td></tr><tr><th>&vellip;</th><td>&vellip;</td><td>&vellip;</td></tr></tbody></table>
 
 
 
@@ -141,6 +148,8 @@ plot(rs2[1], rs2[2], label = "oczyszczony cosinus")
 ![svg](output_17_0.svg)
 
 
+
+Jak widać powyżej, udało się skutecznie oczyścić naszą funckję
 
 Pomocny tutorial który mocno pomógł w użyciu FFTW: https://gist.github.com/LadaF/73eb430682ef527eea9972ceb96116c5
 
