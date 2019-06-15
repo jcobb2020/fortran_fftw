@@ -63,7 +63,7 @@ plot(os1[1], os1[2])
 
 
 
-Sygnał poddany transformacie:
+Sygnał poddany transformacie. Otrzymaliśmy widmo częstotliwości sygnału, pozwalające nam odczytać jakie składowe harmoniczne wchodzą w jego skład
 
 
 ```julia
